@@ -67,25 +67,25 @@ The monitoring engine is designed to degrade gracefully rather than break — au
 ## 🏗️ Architecture (high level)
 
 ```
-                     ┌───────────────────────┐
-   Browser ─────────▶│    Web Frontend         │
-                     │  (Next.js / TypeScript) │
-                     └───────────┬─────────────┘
+                     ┌──────────────────────────┐
+   Browser ───────▶ │    Web Frontend          │
+                     │  (Next.js / TypeScript)  │
+                     └───────────┬──────────────┘
                                  │
                      ┌───────────┴─────────────┐
-                     │                          │
-                     ▼                          ▼
-          ┌───────────────────┐     ┌────────────────────────┐
-          │   Auth Service      │     │      Core Service        │
-          │  Accounts, sessions │     │  Monitoring pipeline,    │
-          │  Orgs, API keys     │     │  incidents, status pages,│
-          │  Admin auth         │     │  integrations, realtime   │
-          └──────────┬─────────┘     └────────────┬─────────────┘
-                     │                             │
-                     └──────────────┬──────────────┘
+                     │                         │
+                     ▼                         ▼
+          ┌──────────────────────┐     ┌───────────────────────────┐
+          │   Auth Service       │     │      Core Service         │
+          │  Accounts, sessions  │     │  Monitoring pipeline,     │
+          │  Orgs, API keys      │     │  incidents, status pages, │
+          │  Admin auth          │     │  integrations, realtime   │
+          └──────────┬───────────┘     └────────────┬──────────────┘
+                     │                              │
+                     └──────────────┬───────────────┘
                                     ▼
                           ┌────────────────────┐
-                          │     PostgreSQL        │
+                          │     PostgreSQL     │
                           └────────────────────┘
 ```
 
@@ -146,7 +146,11 @@ _A walkthrough video / GIF demo will be embedded here soon._
 
 ## 📬 Contact
 
-Interested in a demo, partnership, or investment? _[Add your contact email / calendly link / website here]_
+Interested in a demo, partnership, or investment? 
+
+- Email - contact@elvoroz.com
+- Website - https://elvoroz.com/
+
 
 ---
 
